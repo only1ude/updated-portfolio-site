@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#movies">Movies</a></li>
+        <li><a href="#football">Football</a></li>
+        <li><a href="#playlist">Playlist</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1 class="intro-heading" data-aos="fade-up">
+      <span class="typewriter">Hi, I'm Emmanuel</span>
+    </h1>
+    <div class="About-content" data-aos="fade-right">
+      <h2>Frontend Developer</h2>
+      <p>I build with <.divs.> and dreams in javascript</p>
+    </div>
+    <div class="image-wrapper" data-aos="zoom-in">
+      <div class="circle">
+        <img src="/assets/images/dp.png" alt="cartoon of me">
+      </div>
+    </div>
+  </section>
+
+  <!-- Movies Section -->
+  <section id="movies" class="movies-section">
+    <div class="movies-wrapper">
+      <div class="carousel" id="carousel">
+        <div class="movie-card active" data-title="Washington Black" data-year="2025">
+          <img src="/assets/images/whashington black.webp" alt="Washington Black">
+        </div>
+        <div class="movie-card" data-title="Fantastic Four" data-year="2024">
+          <img src="/assets/images/fantastic4.webp" alt="Fantastic Four">
+        </div>
+        <div class="movie-card" data-title="Demon Slayer" data-year="2023">
+          <img src="/assets/images/demon slayer.webp" alt="Demon Slayer">
+        </div>
+        <div class="movie-card" data-title="How to Train Your Dragon" data-year="2022">
+          <img src="/assets/images/how to train your dragon.webp" alt="HTTYD">
+        </div>
+        <div class="movie-card" data-title="Thunderbolts" data-year="2025">
+          <img src="/assets/images/thunderbolts.webp" alt="Thunderbolts">
+        </div>
+        <div class="movie-card" data-title="Dangerous Animals" data-year="2021">
+          <img src="/assets/images/dangerous animals.webp" alt="Dangerous Animals">
+        </div>
+      </div>
+
+      <div class="movie-details">
+        <p id="movie-year">2025</p>
+        <h3 id="movie-title">Washington Black</h3>
+        <div class="movie-buttons">
+          <button onclick="showInfo()">Info</button>
+          <button onclick="showPreview()">Preview</button>
+          <button onclick="downloadMovie()">Download</button>
+        </div>
+        <div class="indicator-dots" id="dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <footer class="footer">
+    <svg class="footer-svg" viewBox="0 0 1600 900" preserveAspectRatio="none">
+      <defs>
+        <path
+          id="wave"
+          fill="rgba(105, 27, 252, 0.6)"
+          d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+             s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859
+             s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
+        />
+      </defs>
+      <g>
+        <use xlink:href="#wave" opacity=".4">
+          <animateTransform attributeName="transform" type="translate"
+            dur="8s" values="270 230; -334 180; 270 230" repeatCount="indefinite"
+          />
+        </use>
+        <use xlink:href="#wave" opacity=".6">
+          <animateTransform attributeName="transform" type="translate"
+            dur="6s" values="-270 230;243 220;-270 230" repeatCount="indefinite"
+          />
+        </use>
+        <use xlink:href="#wave" opacity=".9">
+          <animateTransform attributeName="transform" type="translate"
+            dur="4s" values="0 230;-140 200;0 230" repeatCount="indefinite"
+          />
+        </use>
+      </g>
+    </svg>
+
+    <div class="footer-content">
+      <ul class="socials">
+        <li><a class="fa-brands fa-x-twitter" href="https://x.com/onlyiude?s=21"></a></li>
+        <li><a class="fa-brands fa-github" href="https://github.com/onlly1ude"></a></li>
+        <li><a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/emmanuel-ude"></a></li>
+        <li><a class="fa-solid fa-envelope" href="mailto:only1ude@gmail.com"></a></li>
+        <li><a class="fa-brands fa-instagram" href="https://www.instagram.com/only1ude"></a></li>
+      </ul>
+      <p>© 2023 Emmanuel Ude. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
